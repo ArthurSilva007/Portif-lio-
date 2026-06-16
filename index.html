@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anderson Arthur - Desenvolvedor Backend Java. Portfólio com projetos em Spring Boot, APIs REST e banco de dados.">
+    <meta name="keywords" content="Java, Spring Boot, Backend, Desenvolvedor, PostgreSQL, MySQL, Docker">
+    <meta name="author" content="Anderson Arthur">
+    
+    <title>Anderson Arthur | Desenvolvedor Backend Java</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>Anderson<span class="logo-dot">.</span>Arthur<span class="logo-bracket">/&gt;</span>
+            </a>
+            
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                    <li><a href="#experiencia" class="nav-link">Experiência</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-greeting reveal">Olá, eu sou</p>
+                <h1 class="hero-title reveal">Anderson Arthur</h1>
+                <h2 class="hero-subtitle reveal">Desenvolvedor Backend Java</h2>
+                <p class="hero-description reveal">
+                    Construindo soluções robustas, seguras e escaláveis com Java, Spring Boot e boas práticas de arquitetura de software.
+                </p>
+                <div class="hero-buttons reveal">
+                    <a href="#projetos" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> Ver Projetos
+                    </a>
+                    <a href="https://www.linkedin.com/in/anderson-silva-15b340323" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+                <div class="hero-social reveal">
+                    <a href="https://github.com/ArthurSilva007" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/anderson-silva-15b340323" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:andersonarthur744@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image reveal">
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="code-title">Anderson.java</span>
+                    </div>
+                    <pre class="code-body"><code><span class="token-keyword">public class</span> <span class="token-class">Anderson</span> <span class="token-keyword">implements</span> <span class="token-class">BackendDeveloper</span> {
+    <span class="token-keyword">private</span> String <span class="token-variable">stack</span> = <span class="token-string">"Java + Spring Boot"</span>;
+    <span class="token-keyword">private</span> String <span class="token-variable">focus</span> = <span class="token-string">"Clean Code & APIs"</span>;
+
+    <span class="token-keyword">public void</span> <span class="token-method">solveProblem</span>(Challenge challenge) {
+        <span class="token-class">System</span>.out.<span class="token-method">println</span>(<span class="token-string">"Resolvendo: "</span> + challenge);
+    }
+}</code></pre>
+                </div>
+                <div class="floating-badge badge-1">
+                    <i class="fab fa-java"></i> Java
+                </div>
+                <div class="floating-badge badge-2">
+                    <i class="fas fa-leaf"></i> Spring Boot
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#sobre" aria-label="Rolar para baixo">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section class="section sobre" id="sobre">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-label">Sobre Mim</p>
+                <h2 class="section-title">Backend com mentalidade de quem resolve problemas</h2>
+            </div>
+            
+            <div class="sobre-grid">
+                <div class="sobre-card reveal">
+                    <div class="sobre-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Minha Jornada</h3>
+                    <p>
+                        Minha trajetória na tecnologia começou longe do código — na resolução prática de problemas. Por anos, atuei no suporte técnico e na manutenção de sistemas para empresas familiares, lidando com infraestrutura, hardware, software e o desafio diário de manter operações funcionando.
+                    </p>
+                </div>
+                
+                <div class="sobre-card reveal">
+                    <div class="sobre-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Formação Acadêmica</h3>
+                    <p>
+                        Hoje sou estudante de <strong>Análise e Desenvolvimento de Sistemas na UNIFAVIP Wyden</strong> e estou direcionando minha carreira para o desenvolvimento backend com Java, aprofundando-me no ecossistema Spring e em bancos de dados relacionais.
+                    </p>
+                </div>
+                
+                <div class="sobre-card reveal">
+                    <div class="sobre-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Meu Foco</h3>
+                    <p>
+                        Sou movido por arquitetura de software, código limpo, microsserviços e pela satisfação de ver uma ideia se tornando um sistema funcional. Busco oportunidades como <strong>Desenvolvedor Java Júnior, Trainee ou Estagiário Backend</strong>.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="sobre-destaque reveal">
+                <div class="destaque-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <div class="destaque-content">
+                    <h3>Diferencial prático</h3>
+                    <p>
+                        Minha experiência prévia com suporte técnico me deu uma vantagem rara: <strong>sei olhar para o software com os olhos de quem também precisa mantê-lo funcionando no dia a dia</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos Section -->
+    <section class="section projetos" id="projetos">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-label">Projetos em Destaque</p>
+                <h2 class="section-title">Soluções reais construídas com código</h2>
+            </div>
+            
+            <div class="projetos-grid">
+                <!-- Projeto 1 -->
+                <article class="projeto-card reveal">
+                    <div class="projeto-header">
+                        <div class="projeto-icon">
+                            <i class="fas fa-boxes-stacked"></i>
+                        </div>
+                        <div class="projeto-links">
+                            <a href="https://github.com/ArthurSilva007" target="_blank" rel="noopener noreferrer" aria-label="Ver repositório">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="projeto-title">StockSystemV2</h3>
+                    <p class="projeto-tagline">Sistema de Gerenciamento de Estoque para Oficinas Comerciais</p>
+                    
+                    <div class="projeto-conteudo">
+                        <div class="projeto-item">
+                            <h4><i class="fas fa-circle-exclamation"></i> O Problema</h4>
+                            <p>Oficinas comerciais perdem tempo e dinheiro por não terem controle preciso do estoque de peças e materiais, usando planilhas desatualizadas e sem rastreabilidade.</p>
+                        </div>
+                        <div class="projeto-item">
+                            <h4><i class="fas fa-lightbulb"></i> A Solução</h4>
+                            <p>API REST robusta desenvolvida com <strong>Java 21 e Spring Boot 4.0.3</strong>, utilizando <strong>Spring MVC</strong> para exposição dos endpoints, <strong>Spring Data JPA</strong> para persistência, <strong>Spring Validation</strong> para garantia da integridade dos dados e <strong>PostgreSQL</strong> como banco relacional. Conta com testes unitários e de integração usando <strong>Spring Boot Test, Spring Validation Test e Spring WebMVC Test</strong>.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="projeto-tech">
+                        <span class="tech-tag">Java 21</span>
+                        <span class="tech-tag">Spring Boot 4.0.3</span>
+                        <span class="tech-tag">Spring MVC</span>
+                        <span class="tech-tag">Spring Data JPA</span>
+                        <span class="tech-tag">Spring Validation</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Lombok</span>
+                        <span class="tech-tag">Maven</span>
+                        <span class="tech-tag">JUnit</span>
+                    </div>
+                </article>
+                
+                <!-- Projeto 2 -->
+                <article class="projeto-card reveal">
+                    <div class="projeto-header">
+                        <div class="projeto-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="projeto-links">
+                            <a href="https://github.com/ArthurSilva007" target="_blank" rel="noopener noreferrer" aria-label="Ver repositório">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="projeto-title">Automação de Mensagens</h3>
+                    <p class="projeto-tagline">Bot de Promoções com Spring Boot e Telegram</p>
+                    
+                    <div class="projeto-conteudo">
+                        <div class="projeto-item">
+                            <h4><i class="fas fa-circle-exclamation"></i> O Problema</h4>
+                            <p>Campanhas de promoções exigem comunicação rápida e em massa com clientes. Fazer isso manualmente em grupos de mensageria consome tempo, é propenso a erros e dificulta o controle e rastreabilidade dos disparos.</p>
+                        </div>
+                        <div class="projeto-item">
+                            <h4><i class="fas fa-lightbulb"></i> A Solução</h4>
+                            <p>Backend robusto desenvolvido com <strong>Java 17 e Spring Boot 3</strong>, responsável pela automação de disparos e gerenciamento de grupos via <strong>Telegram Bot API</strong>. Utiliza <strong>Spring Scheduler</strong> para execução programada, <strong>Spring Data JPA</strong> com <strong>PostgreSQL</strong> para persistência, <strong>Spring WebClient</strong> para integrações HTTP e <strong>MapStruct</strong> para mapeamento DTO/Entity. Testado com <strong>JUnit 5, Mockito, Testcontainers e WireMock</strong>, garantindo qualidade e confiabilidade.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="projeto-tech">
+                        <span class="tech-tag">Java 17</span>
+                        <span class="tech-tag">Spring Boot 3</span>
+                        <span class="tech-tag">Spring Data JPA</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Spring Scheduler</span>
+                        <span class="tech-tag">WebClient</span>
+                        <span class="tech-tag">Telegram Bot API</span>
+                        <span class="tech-tag">JUnit 5</span>
+                        <span class="tech-tag">Mockito</span>
+                        <span class="tech-tag">Testcontainers</span>
+                        <span class="tech-tag">WireMock</span>
+                        <span class="tech-tag">Maven</span>
+                    </div>
+                </article>
+                
+                <!-- Projeto 3 -->
+                <article class="projeto-card reveal">
+                    <div class="projeto-header">
+                        <div class="projeto-icon">
+                            <i class="fas fa-list-check"></i>
+                        </div>
+                        <div class="projeto-links">
+                            <a href="https://github.com/ArthurSilva007" target="_blank" rel="noopener noreferrer" aria-label="Ver repositório">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="projeto-title">Tasks_focus</h3>
+                    <p class="projeto-tagline">Sistema de Tarefas com Arquitetura em Camadas e Segurança JWT</p>
+                    
+                    <div class="projeto-conteudo">
+                        <div class="projeto-item">
+                            <h4><i class="fas fa-circle-exclamation"></i> O Problema</h4>
+                            <p>Aplicativos de tarefas simples frequentemente ignoram a segurança dos dados, não oferecem controle de acesso adequado e carecem de visibilidade sobre produtividade e métricas.</p>
+                        </div>
+                        <div class="projeto-item">
+                            <h4><i class="fas fa-lightbulb"></i> A Solução</h4>
+                            <p>Backend estruturado em <strong>arquitetura em camadas</strong> com <strong>Java e Spring Boot</strong>, separado em módulos de <strong>Autenticação, Tarefas e Dashboard</strong>. Segurança implementada com <strong>JWT Token</strong> e filtros de validação, persistência com <strong>JPA/Hibernate e PostgreSQL</strong>, notificações por e-mail via <strong>MailerSend</strong>, agendamento com <strong>Quartz Scheduler</strong> e monitoramento através do <strong>Spring Boot Actuator</strong>.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="projeto-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">Spring Security</span>
+                        <span class="tech-tag">JWT</span>
+                        <span class="tech-tag">JPA/Hibernate</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Spring Mail</span>
+                        <span class="tech-tag">Quartz</span>
+                        <span class="tech-tag">Actuator</span>
+                        <span class="tech-tag">REST API</span>
+                        <span class="tech-tag">Angular</span>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="projetos-cta reveal">
+                <a href="https://github.com/ArthurSilva007" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    <i class="fab fa-github"></i> Ver mais no GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades Section -->
+    <section class="section habilidades" id="habilidades">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-label">Habilidades & Tecnologias</p>
+                <h2 class="section-title">Stack técnica focada em backend</h2>
+            </div>
+
+            <div class="habilidades-grid">
+                <div class="habilidade-categoria reveal">
+                    <div class="habilidade-header">
+                        <div class="habilidade-icon backend">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend</h3>
+                    </div>
+                    <ul class="habilidade-lista">
+                        <li><i class="fab fa-java"></i> Java</li>
+                        <li><i class="fas fa-leaf"></i> Spring Boot</li>
+                        <li><i class="fas fa-shield-halved"></i> Spring Security</li>
+                        <li><i class="fas fa-network-wired"></i> APIs REST</li>
+                    </ul>
+                </div>
+
+                <div class="habilidade-categoria reveal">
+                    <div class="habilidade-header">
+                        <div class="habilidade-icon database">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Banco de Dados</h3>
+                    </div>
+                    <ul class="habilidade-lista">
+                        <li><i class="fas fa-database"></i> PostgreSQL</li>
+                        <li><i class="fas fa-database"></i> MySQL</li>
+                        <li><i class="fas fa-table"></i> Modelagem Relacional</li>
+                        <li><i class="fas fa-code"></i> SQL</li>
+                    </ul>
+                </div>
+
+                <div class="habilidade-categoria reveal">
+                    <div class="habilidade-header">
+                        <div class="habilidade-icon devops">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Ferramentas & DevOps</h3>
+                    </div>
+                    <ul class="habilidade-lista">
+                        <li><i class="fab fa-git-alt"></i> Git</li>
+                        <li><i class="fab fa-github"></i> GitHub</li>
+                        <li><i class="fas fa-paper-plane"></i> Postman</li>
+                        <li><i class="fab fa-docker"></i> Docker</li>
+                    </ul>
+                </div>
+
+                <div class="habilidade-categoria reveal">
+                    <div class="habilidade-header">
+                        <div class="habilidade-icon frontend">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Frontend & Dados</h3>
+                    </div>
+                    <ul class="habilidade-lista">
+                        <li><i class="fab fa-angular"></i> Angular</li>
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fas fa-book-open"></i> Jupyter Notebook</li>
+                        <li><i class="fas fa-code"></i> HTML / CSS / JS</li>
+                    </ul>
+                </div>
+
+                <div class="habilidade-categoria reveal">
+                    <div class="habilidade-header">
+                        <div class="habilidade-icon ide">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>IDE & Ambiente</h3>
+                    </div>
+                    <ul class="habilidade-lista">
+                        <li><i class="fas fa-keyboard"></i> IntelliJ IDEA</li>
+                        <li><i class="fas fa-terminal"></i> VS Code</li>
+                        <li><i class="fab fa-windows"></i> Windows</li>
+                        <li><i class="fas fa-layer-group"></i> Maven</li>
+                    </ul>
+                </div>
+
+                <div class="habilidade-categoria full reveal">
+                    <div class="habilidade-header">
+                        <div class="habilidade-icon praticas">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Práticas & Mentalidade</h3>
+                    </div>
+                    <div class="tags-grupo">
+                        <span class="skill-tag">Arquitetura de Software</span>
+                        <span class="skill-tag">Código Limpo</span>
+                        <span class="skill-tag">Microsserviços</span>
+                        <span class="skill-tag">Resolução de Problemas</span>
+                        <span class="skill-tag">Suporte Técnico</span>
+                        <span class="skill-tag">Infraestrutura</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiência Section -->
+    <section class="section experiencia" id="experiencia">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-label">Experiência Prática</p>
+                <h2 class="section-title">Trajetória que agrega valor técnico</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Automação de Bot para Grupos de Promoções</h3>
+                            <span class="timeline-badge">Freelance</span>
+                        </div>
+                        <p class="timeline-period"><i class="far fa-calendar"></i> Projeto em andamento</p>
+                        <ul class="timeline-list">
+                            <li>Desenvolvimento de bot automatizado para disparo e gerenciamento de promoções em grupos de mensageria.</li>
+                            <li>Integração com APIs de mensageria para envio programado e controle de grupos.</li>
+                            <li>Implementação de regras de negócio para segmentação e automação de campanhas.</li>
+                            <li>Atualmente desenvolvendo um painel de controle web para facilitar a gestão e configuração do bot pelos clientes.</li>
+                            <li>Experiência prática com levantamento de requisitos, entregas para cliente e evolução contínua do produto.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Suporte Técnico e Manutenção de Sistemas</h3>
+                            <span class="timeline-badge">Empresas Familiares</span>
+                        </div>
+                        <p class="timeline-period"><i class="far fa-calendar"></i> Período contínuo</p>
+                        <ul class="timeline-list">
+                            <li>Atuação direta no suporte técnico e manutenção de sistemas para empresas familiares.</li>
+                            <li>Gerenciamento de infraestrutura, resolução de problemas de hardware e software.</li>
+                            <li>Melhoria de processos internos e otimização do funcionamento operacional dos sistemas.</li>
+                            <li>Desenvolvimento de uma visão prática e orientada a resultados sobre tecnologia e negócios.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Formação em Análise e Desenvolvimento de Sistemas</h3>
+                            <span class="timeline-badge">UNIFAVIP Wyden</span>
+                        </div>
+                        <p class="timeline-period"><i class="far fa-calendar"></i> Em andamento</p>
+                        <ul class="timeline-list">
+                            <li>Curso superior tecnólogo focado em desenvolvimento de software e engenharia de sistemas.</li>
+                            <li>Aprofundamento em linguagens de programação, banco de dados, arquitetura de software e boas práticas.</li>
+                            <li>Desenvolvimento de projetos práticos que simulam desafios reais do mercado de tecnologia.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section class="section contato" id="contato">
+        <div class="container">
+            <div class="contato-wrapper reveal">
+                <div class="contato-content">
+                    <p class="section-label">Contato</p>
+                    <h2 class="section-title">Vamos conversar?</h2>
+                    <p class="contato-texto">
+                        Estou em busca de oportunidades como <strong>Desenvolvedor Java Júnior, Trainee ou Estagiário Backend</strong>, onde eu possa aplicar meus conhecimentos, aprender com um time talentoso e contribuir para projetos que gerem impacto real.
+                    </p>
+                    <p class="contato-texto">
+                        Se você é recrutador(a) ou líder técnico em busca de alguém com <strong>foco em backend, curva de aprendizado acelerada e mentalidade de resolver problemas</strong>, será um prazer conversar com você.
+                    </p>
+                    
+                    <div class="contato-info">
+                        <a href="mailto:andersonarthur744@gmail.com" class="contato-item">
+                            <div class="contato-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <span class="contato-label">E-mail</span>
+                                <span class="contato-valor">andersonarthur744@gmail.com</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/anderson-silva-15b340323" target="_blank" rel="noopener noreferrer" class="contato-item">
+                            <div class="contato-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div>
+                                <span class="contato-label">LinkedIn</span>
+                                <span class="contato-valor">linkedin.com/in/anderson-silva-15b340323</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://github.com/ArthurSilva007" target="_blank" rel="noopener noreferrer" class="contato-item">
+                            <div class="contato-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div>
+                                <span class="contato-label">GitHub</span>
+                                <span class="contato-valor">github.com/ArthurSilva007</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contato-cta">
+                    <div class="cta-card">
+                        <i class="fas fa-paper-plane"></i>
+                        <h3>Pronto para contribuir</h3>
+                        <p>Disponível para oportunidades presenciais, híbridas ou remotas.</p>
+                        <a href="mailto:andersonarthur744@gmail.com" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> Enviar e-mail
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Desenvolvido com <i class="fas fa-heart"></i> e muito <i class="fas fa-coffee"></i> por <strong>Anderson Arthur</strong>
+                </p>
+                <p class="footer-copy">
+                    © <span id="year"></span> Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
